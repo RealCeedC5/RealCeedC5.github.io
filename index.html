@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C5 | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>C5 | Scripter</title>
+    <meta name="description" content="C5 writes Lua and Luau scripts and takes scripting commissions.">
+    <meta property="og:title" content="C5 | Scripter">
+    <meta property="og:description" content="C5 writes Lua and Luau scripts and takes scripting commissions.">
+    <meta name="theme-color" content="#111111">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%23ffc107'%3EC5%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>| C5 |</h1>
-            <nav>
+            <a href="index.html" class="logo"><span class="bar">|</span> C5 <span class="bar">|</span></a>
+            <nav aria-label="Main">
                 <ul>
                     <li><a href="portfolios.html">Portfolios</a></li>
                     <li><a href="about.html">About me</a></li>
@@ -23,12 +31,60 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h2>Hello, I'm C5,<br> I do scripts</h2>
-                <p>I most likely take commissions for Lua and Luau scripting,<br> But I can also work with other languages as well <span>(I rarely do)</span>.</p>
-                <p class="commission-status">MY COMMISSION STATUS: <span class="status-closed">Close</span></p>
-                <div class="buttons">
-                    <a href="contact.html" class="btn">Contacts</a>
-                    <a href="about.html" class="btn">More about me</a>
+                <div>
+                    <span class="status" data-status-pill><span class="dot"></span><span>Commissions <b data-status class="status-closed">Closed</b></span></span>
+                    <h1>Hello, I'm C5,<br> I do <span class="hl">scripts</span></h1>
+                    <p class="lede">I most likely take commissions for Lua and Luau scripting,<br> but I can also work with other languages as well <span class="note">(I rarely do)</span>.</p>
+                    <div class="buttons">
+                        <a href="portfolios.html" class="btn">See my work <span class="arrow">→</span></a>
+                        <a href="contact.html" class="btn btn-ghost">Contacts</a>
+                    </div>
+                </div>
+                <div class="code-window">
+<div class="code-tabs"><span class="code-tab">C5.luau <span class="x">×</span></span><span class="code-tab off">portfolio.luau</span></div>
+<pre class="code"><code><span class="ln"><span class="com">-- C5.luau</span></span><span class="ln"><span class="kw">local</span> C5 = {</span><span class="ln">    <span class="prop">role</span> = <span class="str">"Scripter"</span>,</span><span class="ln">    <span class="prop">languages</span> = { <span class="str">"Luau"</span>, <span class="str">"Lua"</span> },</span><span class="ln">    <span class="prop">otherLanguages</span> = <span class="str">"rarely"</span>,</span><span class="ln">    <span class="prop">commissionsOpen</span> = <span class="num" data-status-bool>false</span>,</span><span class="ln">}</span><span class="ln"></span><span class="ln"><span class="kw">function</span> C5:hire(request)</span><span class="ln">    <span class="kw">if not</span> self.commissionsOpen <span class="kw">then</span></span><span class="ln">        warn(<span class="str">"Check back soon!"</span>)</span><span class="ln">        <span class="kw">return</span></span><span class="ln">    <span class="kw">end</span></span><span class="ln">    <span class="kw">return</span> self:script(request)</span><span class="ln"><span class="kw">end</span></span><span class="ln"></span><span class="ln"><span class="kw">return</span> C5<span class="cursor" aria-hidden="true"></span></span></code></pre>
+<div class="code-status"><span>Luau · UTF-8</span><span>Ln 17, Col 10</span></div>
+</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <div><p class="eyebrow">featured</p><h2>Latest project</h2></div>
+                    <a class="link" href="portfolios.html">All projects →</a>
+                </div>
+                <article class="feature">
+                    <a class="shot" href="portfolios.html"><img src="images/rai-sukjai-farm.webp" alt="Rai Sukjai: a pixel-art farm with rows of crops, a scarecrow and chickens" width="1280" height="720"></a>
+                    <div class="feature-body">
+                        <h3>Rai Sukjai <span class="th">ไร่สุขใจ</span></h3>
+                        <p>A cozy farming game set in a Thai village. Grow crops through three Thai seasons, fish the canal, dig through a 20-floor mine and make friends with the villagers. Plays in Thai or English, on desktop and phone.</p>
+                        <ul class="tags"><li>JavaScript</li><li>Canvas 2D</li><li>Web Audio</li><li>TH / EN</li></ul>
+                        <div class="buttons">
+                            <a class="btn" href="https://realceedc5.github.io/rai-sukjai/" target="_blank" rel="noopener">Play it <span class="arrow">→</span></a>
+                            <a class="btn btn-ghost" href="https://github.com/RealCeedC5/rai-sukjai" target="_blank" rel="noopener">Source</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head"><div><p class="eyebrow">languages</p><h2>What I script in</h2></div></div>
+                <div class="skills">
+                    <div class="skill"><span class="ext">.luau</span><h3>Luau</h3><p>The scripting language of Roblox. Most of my commissions are written in it.</p><span class="tags"><span class="tag-main">Main</span></span></div>
+                    <div class="skill"><span class="ext">.lua</span><h3>Lua</h3><p>Plain Lua scripting, the language Luau grew out of.</p><span class="tags"><span class="tag-main">Main</span></span></div>
+                    <div class="skill minor"><span class="ext">.*</span><h3>Other languages</h3><p>I can work in other languages too, but I rarely take that work.</p><span class="tags"><span class="tag-minor">Rarely</span></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cta">
+                    <div><h2>Need a script?</h2><p>Check my commission status and message me.</p></div>
+                    <div class="buttons"><a href="contact.html" class="btn">Contact me <span class="arrow">→</span></a></div>
                 </div>
             </div>
         </section>
@@ -36,8 +92,11 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 C5 All rights reserved.</p>
+            <a href="index.html" class="logo"><span class="bar">|</span> C5 <span class="bar">|</span></a>
+            <div class="social-icons"></div>
+            <p>&copy; <span data-year>2026</span> C5. All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
