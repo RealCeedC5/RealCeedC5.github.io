@@ -3,36 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>About me | C5</title>
+    <title data-th="เกี่ยวกับผม | C5">About me | C5</title>
     <meta name="description" content="About C5, a Lua and Luau scripter.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="C5">
     <meta property="og:title" content="About me | C5">
     <meta property="og:description" content="About C5, a Lua and Luau scripter.">
+    <meta property="og:url" content="https://realceedc5.github.io/about.html">
+    <meta property="og:image" content="https://realceedc5.github.io/images/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="theme-color" content="#111111">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%23ffc107'%3EC5%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip" href="#main" data-th="ข้ามไปที่เนื้อหา">Skip to content</a>
     <header>
         <div class="container">
             <a href="index.html" class="logo"><span class="bar">|</span> C5 <span class="bar">|</span></a>
-            <nav aria-label="Main">
-                <ul>
-                    <li><a href="portfolios.html">Portfolios</a></li>
-                    <li><a href="about.html">About me</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
-                </ul>
-            </nav>
+            <div class="header-right">
+                <nav aria-label="Main" data-th-aria-label="เมนูหลัก">
+                    <ul>
+                        <li><a href="portfolios.html" data-th="ผลงาน">Portfolios</a></li>
+                        <li><a href="about.html" data-th="เกี่ยวกับผม">About me</a></li>
+                        <li><a href="contact.html" data-th="ติดต่อ">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="lang" role="group" aria-label="Language / ภาษา">
+                    <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+                    <button type="button" data-lang="th" aria-pressed="false" lang="th">ไทย</button>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <section class="page-head">
             <div class="container">
-                <p class="eyebrow">about me</p>
-                <h1>Hi, I'm C5</h1>
+                <p class="eyebrow" data-th="เกี่ยวกับผม">about me</p>
+                <h1 data-th="สวัสดี ผม C5">Hi, I'm C5</h1>
             </div>
         </section>
 
@@ -40,26 +54,27 @@
             <div class="container about-grid">
                 <div>
                     <div class="prose">
-                        <p>I'm a scripter. Most of what I write is Lua and Luau, the language behind Roblox games.</p>
-                        <p>I take commissions for Lua and Luau scripting. Now and then I'll pick up work in another language, but that's rare, so Lua and Luau are where I'm most useful.</p>
-                        <p>My published projects are on the portfolio page, and everything else is on GitHub.</p>
+                        <p data-th="ผมเป็นสคริปเตอร์ ส่วนใหญ่เขียน Lua กับ Luau ภาษาที่อยู่เบื้องหลังเกม Roblox">I'm a scripter. Most of what I write is Lua and Luau, the language behind Roblox games.</p>
+                        <p data-th="ผมรับงานเขียนสคริปต์ Lua และ Luau บางครั้งก็รับงานภาษาอื่นบ้าง แต่น้อยมาก งานที่ถนัดที่สุดจึงเป็น Lua กับ Luau">I take commissions for Lua and Luau scripting. Now and then I'll pick up work in another language, but that's rare, so Lua and Luau are where I'm most useful.</p>
+                        <p data-th="นอกจากนี้ผมยังทำเกมด้วย อย่างไร่สุขใจ เกมทำไร่แบบไทยที่เขียนด้วย JavaScript เล่นบนเบราว์เซอร์ได้เลย และชวนเพื่อนมาเล่นออนไลน์ได้">I also make games, like Rai Sukjai, a Thai farming game written in JavaScript that runs in your browser and can be played online with friends.</p>
+                        <p data-th="ผลงานที่ปล่อยแล้วอยู่ในหน้าผลงาน ส่วนที่เหลืออยู่บน GitHub">My published projects are on the portfolio page, and everything else is on GitHub.</p>
                     </div>
                     <ul class="chips">
                         <li class="main">Luau</li>
                         <li class="main">Lua</li>
-                        <li>Other languages <small>(rarely)</small></li>
+                        <li data-th="ภาษาอื่น &lt;small&gt;(นาน ๆ ที)&lt;/small&gt;">Other languages <small>(rarely)</small></li>
                     </ul>
                     <div class="panel">
-                        <span class="status" data-status-pill><span class="dot"></span><span>Commissions <b data-status class="status-closed">Closed</b></span></span>
+                        <span class="status" data-status-pill><span class="dot"></span><span><span data-th="คอมมิชชัน">Commissions</span> <b data-status class="status-closed">Closed</b></span></span>
                         <div class="buttons">
-                            <a href="portfolios.html" class="btn btn-ghost">See my work</a>
-                            <a href="contact.html" class="btn">Contact me <span class="arrow">→</span></a>
+                            <a href="portfolios.html" class="btn btn-ghost" data-th="ดูผลงาน">See my work</a>
+                            <a href="contact.html" class="btn" data-th="ติดต่อผม &lt;span class=&quot;arrow&quot;&gt;→&lt;/span&gt;">Contact me <span class="arrow">→</span></a>
                         </div>
                     </div>
                 </div>
                 <div class="code-window">
 <div class="code-tabs"><span class="code-tab">about.luau <span class="x">×</span></span></div>
-<pre class="code"><code><span class="ln"><span class="com">-- about.luau</span></span><span class="ln"><span class="kw">local</span> me = <span class="kw">require</span>(script.Parent.C5)</span><span class="ln"></span><span class="ln">print(me.role)</span><span class="ln"><span class="com">--> Scripter</span></span><span class="ln">print(me.languages)</span><span class="ln"><span class="com">--> {"Luau", "Lua"}</span></span><span class="ln">print(me.commissionsOpen)</span><span class="ln"><span class="com">--> <span data-status-bool>false</span></span><span class="cursor" aria-hidden="true"></span></span></code></pre>
+<pre class="code"><code><span class="ln"><span class="com">-- about.luau</span></span><span class="ln"><span class="kw">local</span> me = <span class="kw">require</span>(script.Parent.C5)</span><span class="ln"></span><span class="ln">print(me.role)</span><span class="ln"><span class="com">--&gt; Scripter</span></span><span class="ln">print(me.languages)</span><span class="ln"><span class="com">--&gt; {"Luau", "Lua"}</span></span><span class="ln">print(me.commissionsOpen)</span><span class="ln"><span class="com">--&gt; <span data-status-bool>false</span></span><span class="cursor" aria-hidden="true"></span></span></code></pre>
 <div class="code-status"><span>Output</span><span>Ln 9</span></div>
 </div>
             </div>
@@ -70,7 +85,7 @@
         <div class="container">
             <a href="index.html" class="logo"><span class="bar">|</span> C5 <span class="bar">|</span></a>
             <div class="social-icons"></div>
-            <p>&copy; <span data-year>2026</span> C5. All rights reserved.</p>
+            <p data-th="&amp;copy; &lt;span data-year&gt;2026&lt;/span&gt; C5 สงวนลิขสิทธิ์">&copy; <span data-year>2026</span> C5. All rights reserved.</p>
         </div>
     </footer>
     <script src="script.js"></script>

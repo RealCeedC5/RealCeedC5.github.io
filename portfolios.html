@@ -3,87 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Portfolios | C5</title>
-    <meta name="description" content="Projects by C5, including Rai Sukjai, a Thai farming game.">
+    <title data-th="ผลงาน | C5">Portfolios | C5</title>
+    <meta name="description" content="Projects by C5, including Rai Sukjai, a Thai farming game with online co-op, cutscenes and a character creator.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="C5">
     <meta property="og:title" content="Portfolios | C5">
-    <meta property="og:description" content="Projects by C5, including Rai Sukjai, a Thai farming game.">
+    <meta property="og:description" content="Projects by C5, including Rai Sukjai, a Thai farming game with online co-op, cutscenes and a character creator.">
+    <meta property="og:url" content="https://realceedc5.github.io/portfolios.html">
+    <meta property="og:image" content="https://realceedc5.github.io/images/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="theme-color" content="#111111">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%23ffc107'%3EC5%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip" href="#main" data-th="ข้ามไปที่เนื้อหา">Skip to content</a>
     <header>
         <div class="container">
             <a href="index.html" class="logo"><span class="bar">|</span> C5 <span class="bar">|</span></a>
-            <nav aria-label="Main">
-                <ul>
-                    <li><a href="portfolios.html">Portfolios</a></li>
-                    <li><a href="about.html">About me</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
-                </ul>
-            </nav>
+            <div class="header-right">
+                <nav aria-label="Main" data-th-aria-label="เมนูหลัก">
+                    <ul>
+                        <li><a href="portfolios.html" data-th="ผลงาน">Portfolios</a></li>
+                        <li><a href="about.html" data-th="เกี่ยวกับผม">About me</a></li>
+                        <li><a href="contact.html" data-th="ติดต่อ">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="lang" role="group" aria-label="Language / ภาษา">
+                    <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+                    <button type="button" data-lang="th" aria-pressed="false" lang="th">ไทย</button>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <section class="page-head">
             <div class="container">
-                <p class="eyebrow">portfolios</p>
-                <h1>My work</h1>
-                <p class="lede">Projects I've published. Play them in your browser or read the code on GitHub.</p>
+                <p class="eyebrow" data-th="ผลงาน">portfolios</p>
+                <h1 data-th="ผลงานของผม">My work</h1>
+                <p class="lede" data-th="โปรเจกต์ที่ผมปล่อยแล้ว เล่นได้บนเบราว์เซอร์ หรือเข้าไปดูโค้ดบน GitHub">Projects I've published. Play them in your browser or read the code on GitHub.</p>
             </div>
         </section>
 
         <section class="section" style="padding-top:40px">
             <div class="container">
-                <article class="case">
-                    <div class="gallery">
-                        <figure class="main"><img src="images/rai-sukjai-farm.webp" alt="The farm: rows of crops, a scarecrow, chickens and a pond" width="1280" height="720"><figcaption>Farm · hot season</figcaption></figure>
-                        <figure><img src="images/rai-sukjai-village.webp" alt="Talking with Grandma Boon in the village" width="1280" height="720" loading="lazy"><figcaption>Villagers</figcaption></figure>
-                        <figure><img src="images/rai-sukjai-fishing.webp" alt="The fishing minigame by the forest river" width="1280" height="720" loading="lazy"><figcaption>Fishing</figcaption></figure>
-                        <figure><img src="images/rai-sukjai-festival.webp" alt="Krathongs floating down the canal on Loy Krathong night" width="1280" height="720" loading="lazy"><figcaption>Loy Krathong</figcaption></figure>
+                <article class="case" aria-labelledby="rs-title">
+                    <div class="case-media">
+                    <div class="main vid">
+                        <video autoplay muted loop playsinline preload="metadata" poster="images/rai-sukjai-gameplay-poster.webp" width="960" height="540" aria-label="Gameplay of Rai Sukjai: tilling soil, planting seeds and watering crops on the farm" data-th-aria-label="ภาพการเล่นไร่สุขใจ: พรวนดิน หว่านเมล็ด และรดน้ำผักในไร่">
+                            <source src="images/rai-sukjai-gameplay.mp4" type="video/mp4">
+                        </video>
+                        <span class="vid-cap" data-th="เล่นจริงในเกม">Gameplay</span>
+                        <button type="button" class="vid-toggle" aria-label="Pause video" data-th-aria-label="หยุดวิดีโอ" data-label-play="Play video" data-label-play-th="เล่นวิดีโอ" data-label-pause="Pause video" data-label-pause-th="หยุดวิดีโอ"><span class="i-pause" aria-hidden="true"></span></button>
+                    </div>
+                    <div class="thumbs" role="list">
+                        <a class="thumb" href="images/rai-sukjai-creator.webp" data-cap="Character creator" data-cap-th="สร้างตัวละคร">
+                            <img src="images/rai-sukjai-creator.webp" alt="The character creator: name, farm name, pet, skin, hair, clothes and colors, with a live preview" data-th-alt="หน้าสร้างตัวละคร ตั้งชื่อ ชื่อไร่ สัตว์เลี้ยง สีผิว ทรงผม เสื้อผ้า และสี พร้อมตัวอย่าง" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="cap" data-th="สร้างตัวละคร">Character creator</span>
+                        </a>
+                        <a class="thumb" href="images/rai-sukjai-farm.webp" data-cap="Farm · hot season" data-cap-th="ไร่ · ฤดูร้อน">
+                            <img src="images/rai-sukjai-farm.webp" alt="The farm in the hot season: rows of crops, a scarecrow, chickens and the hotbar" data-th-alt="ไร่ในฤดูร้อน มีแปลงผัก หุ่นไล่กา ไก่ และแถบเครื่องมือ" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="cap" data-th="ไร่ · ฤดูร้อน">Farm · hot season</span>
+                        </a>
+                        <a class="thumb" href="images/rai-sukjai-coop.webp" data-cap="Online co-op · 3 players" data-cap-th="เล่นออนไลน์ · 3 คน">
+                            <img src="images/rai-sukjai-coop.webp" alt="Three players with name tags farming the same field in online co-op" data-th-alt="ผู้เล่น 3 คนพร้อมป้ายชื่อ ทำไร่แปลงเดียวกันในโหมดออนไลน์" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="cap" data-th="เล่นออนไลน์ · 3 คน">Online co-op · 3 players</span>
+                        </a>
+                        <a class="thumb" href="images/rai-sukjai-heart.webp" data-cap="Heart event · Grandma Boon" data-cap-th="ฉากหัวใจ · ยายบุญ">
+                            <img src="images/rai-sukjai-heart.webp" alt="Grandma Boon&#x27;s heart event: a dialogue with her portrait and two answers to choose from" data-th-alt="ฉากหัวใจของยายบุญ กล่องบทสนทนาพร้อมรูปหน้าและคำตอบให้เลือก 2 ทาง" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="cap" data-th="ฉากหัวใจ · ยายบุญ">Heart event · Grandma Boon</span>
+                        </a>
+                        <a class="thumb" href="images/rai-sukjai-festival.webp" data-cap="Loy Krathong night" data-cap-th="คืนลอยกระทง">
+                            <img src="images/rai-sukjai-festival.webp" alt="Loy Krathong night: krathongs with candles floating down the canal past the temple" data-th-alt="คืนลอยกระทง กระทงจุดเทียนลอยไปตามคลองผ่านหน้าวัด" width="1280" height="720" loading="lazy" decoding="async">
+                            <span class="cap" data-th="คืนลอยกระทง">Loy Krathong night</span>
+                        </a>
+                    </div>
                     </div>
                     <div class="case-body">
                         <div>
-                            <p class="eyebrow">game · browser</p>
-                            <h2>Rai Sukjai <span class="th">ไร่สุขใจ</span></h2>
-                            <p>A cozy 2D farming game set in a Thai village. You take over your grandfather's farm, grow crops through the hot, rainy and cool seasons, raise chickens and water buffalo, fish the canal and dig for Thai gems in the mine. Songkran and Loy Krathong come round each year.</p>
-                            <p>Every sprite and every note of music is generated in code. There are no image or audio files in the game.</p>
+                            <p class="eyebrow" data-th="เกม · เล่นบนเบราว์เซอร์ · ออนไลน์ได้">game · browser · online co-op</p>
+                            <h2 id="rs-title">Rai Sukjai <span class="th">ไร่สุขใจ</span></h2>
+                            <p data-th="เกมทำไร่ 2D ในหมู่บ้านไทย แนว Stardew Valley สร้างตัวละครของตัวเอง รับช่วงไร่ต่อจากคุณตา แล้วปลูกผักไปตามฤดูร้อน ฤดูฝน และฤดูหนาว ตกปลาในคลอง ขุดหาอัญมณีในเหมือง ทำอาหารไทย บูรณะศาลาวัด และฉลองสงกรานต์กับลอยกระทงไปกับชาวบ้าน">A cozy 2D farming game set in a Thai village, in the spirit of Stardew Valley. You make your own farmer, take over your grandfather's farm and grow crops through the hot, rainy and cool seasons. Fish the canal, dig for Thai gems, cook Thai food, restore the temple shrine, and celebrate Songkran and Loy Krathong with the village.</p>
+                            <p data-th="เปิดห้องแล้วส่งรหัสให้เพื่อน เล่นไร่เดียวกันได้สูงสุด 4 คน โดยไม่ต้องมีเซิร์ฟเวอร์เกม ภาพ รูปหน้าตัวละคร และเพลงทุกโน้ตสร้างจากโค้ดทั้งหมด ในเกมไม่มีไฟล์รูปหรือไฟล์เสียงเลยสักไฟล์">Open a room and send friends the code: up to 4 players can farm the same land online, with no game server. Every sprite, portrait and note of music is generated in code. The game has no image or audio files.</p>
                             <div class="buttons" style="margin-top:24px">
-                                <a class="btn" href="https://realceedc5.github.io/rai-sukjai/" target="_blank" rel="noopener">Play it <span class="arrow">→</span></a>
-                                <a class="btn btn-ghost" href="https://github.com/RealCeedC5/rai-sukjai" target="_blank" rel="noopener">Source on GitHub</a>
+                                <a class="btn" href="https://realceedc5.github.io/rai-sukjai/" target="_blank" rel="noopener" data-th="เล่นเลย &lt;span class=&quot;arrow&quot;&gt;→&lt;/span&gt;">Play it <span class="arrow">→</span></a>
+                                <a class="btn btn-ghost" href="https://github.com/RealCeedC5/rai-sukjai" target="_blank" rel="noopener" data-th="ดูโค้ดบน GitHub">Source on GitHub</a>
                             </div>
                         </div>
                         <div class="case-side">
                             <ul class="facts">
-                                <li><b>13</b>crops across 3 seasons</li>
-                                <li><b>7</b>villagers to befriend</li>
-                                <li><b>14</b>fish to catch</li>
-                                <li><b>20</b>mine floors</li>
-                                <li><b>16</b>Thai dishes to cook</li>
-                                <li><b>2</b>languages, TH / EN</li>
+                                <li><b>4</b><span data-th="ผู้เล่นออนไลน์พร้อมกัน">players in online co-op</span></li>
+                                <li><b>7</b><span data-th="ชาวบ้าน มีฉากหัวใจทุกคน">villagers, each with a heart event</span></li>
+                                <li><b>20</b><span data-th="ภารกิจเนื้อเรื่อง">story quests</span></li>
+                                <li><b>20</b><span data-th="เมนูอาหารไทย">Thai dishes to cook</span></li>
+                                <li><b>13</b><span data-th="พืชผักใน 3 ฤดู">crops across 3 seasons</span></li>
+                                <li><b>14</b><span data-th="ชนิดปลาให้ตก">fish to catch</span></li>
+                                <li><b>20</b><span data-th="ชั้นในเหมือง">mine floors</span></li>
+                                <li><b>7</b><span data-th="ชุดของถวายศาลา">shrine offering bundles</span></li>
                             </ul>
-                            <div><h3>// built with</h3><ul class="tags" style="margin-top:8px"><li>JavaScript</li><li>HTML5 Canvas</li><li>Web Audio API</li><li>GitHub Pages</li></ul></div>
+                            <div><h3 data-th="// สร้างด้วย">// built with</h3><ul class="tags" style="margin-top:8px"><li>JavaScript</li><li>HTML5 Canvas</li><li>Web Audio API</li><li>WebRTC · PeerJS</li><li>GitHub Pages</li></ul></div>
                         </div>
                     </div>
                 </article>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:24px">
+            <div class="container">
+                <div class="section-head"><div><p class="eyebrow" data-th="ฟีเจอร์">features</p><h2 data-th="ในเกมมีอะไรบ้าง">What's in the game</h2></div></div>
+                <div class="skills feats">
+                    <div class="skill feat"><span class="ext">js/net.js</span><h3 data-th="เล่นออนไลน์ co-op">Online co-op</h3><p data-th="เปิดห้อง ส่งรหัส 5 ตัวให้เพื่อน แล้วทำไร่เดียวกันได้สูงสุด 4 คน ใช้เงินกองกลาง แต่กระเป๋าใครกระเป๋ามัน">Open a room, send friends the 5-letter code and up to 4 players farm the same land. Money is shared; bags are your own.</p></div>
+                    <div class="skill feat"><span class="ext">js/cutscene.js</span><h3 data-th="คัตซีน">Cutscenes</h3><p data-th="ฉากเปิดเรื่อง เปิดเหมือง ศาลาวัด สงกรานต์ ลอยกระทง และฉากหัวใจที่เลือกคำตอบได้ของชาวบ้านทั้ง 7 คน">An intro, the mine opening, the shrine, Songkran and Loy Krathong, plus a heart event with choices for each of the 7 villagers.</p></div>
+                    <div class="skill feat"><span class="ext">js/people.js</span><h3 data-th="สร้างตัวละคร">Character creator</h3><p data-th="ทรงผม 9 แบบ เสื้อ 7 แบบ กางเกง กระโปรง หรือผ้าถุง หมวกงอบ ผ้าขาวม้า และเลือกแมวหรือหมา เปลี่ยนชุดที่กระจกได้ตลอด แถมแต่งบ้านเองได้">9 hairstyles, 7 tops, pants, skirts or a pha sin, a ngob hat, a pha khao ma scarf, and a cat or a dog. Restyle at the wardrobe mirror and redecorate the house.</p></div>
+                    <div class="skill feat"><span class="ext">js/ease.js</span><h3 data-th="เล่นง่าย">Easy to pick up</h3><p data-th="เปลี่ยนเครื่องมือให้เอง กดค้างเพื่อทำต่อเนื่อง แตะแผนที่เพื่อเดินไป มีลูกศรนำทางภารกิจ แผนที่ ปฏิทิน และปรับความยากง่ายได้">Tools switch on their own, hold to keep working, tap the map to walk there. A quest arrow, world map, calendar and difficulty settings.</p></div>
+                    <div class="skill feat"><span class="ext">js/world2.js</span><h3 data-th="ศาลาวัดและโรงเรือน">Shrine and greenhouse</h3><p data-th="รวบรวมของถวาย 7 ชุดเพื่อบูรณะศาลาและเปิดโรงเรือนที่ปลูกได้ทุกฤดู มีต้นไม้ผล รังผึ้ง และตลาดนัดคืนวันเสาร์">Fill 7 offering bundles to restore the shrine and open a greenhouse that grows all year. Fruit trees, bee houses and a Saturday night market.</p></div>
+                    <div class="skill feat"><span class="ext">js/i18n.js</span><h3 data-th="ไทยและอังกฤษ">Thai and English</h3><p data-th="ทุกเมนู ไอเทม และบทสนทนามีทั้งสองภาษา สลับได้ตลอดจากหน้าแรกหรือในเมนู">Every menu, item and line of dialogue exists in both languages. Switch from the title screen or the menu at any time.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:24px">
+            <div class="container">
+                <div class="section-head"><div><p class="eyebrow" data-th="เบื้องหลัง">under the hood</p><h2 data-th="ทำงานยังไง">How it's built</h2></div>
+                    <a class="link" href="https://github.com/RealCeedC5/rai-sukjai" target="_blank" rel="noopener" data-th="อ่านโค้ด →">Read the code →</a></div>
+                <div class="build">
+                    <div class="notes">
+                    <div class="note-card"><span class="note-n">01</span><h3 data-th="ตัวละครแบบซ้อนชั้น">Layered sprites</h3><p data-th="ตัวละครถูกวาดซ้อนทีละชั้น ผิว เสื้อผ้า ผม หมวก ลงในเฟรมขนาด 20×32 แล้วใส่เส้นขอบ ชุดแบบไหนก็ใช้ได้กับท่าเดินทุกเฟรมและทุกสีหน้า">Characters are painted layer by layer (skin, clothes, hair, hat) into 20×32 frames, then outlined. Any mix of creator options works with every walk frame and portrait expression.</p></div>
+                    <div class="note-card"><span class="note-n">02</span><h3 data-th="ตัวรันคัตซีน">A small cutscene interpreter</h3><p data-th="แต่ละฉากคือรายการคำสั่ง เช่น เดิน พูด ถาม กล้อง เฟด ที่รันทีละขั้น กดข้ามฉากก็ยังได้ผลของทุกขั้นครบ เนื้อเรื่องจึงไม่พัง">Each scene is a list of steps such as walk, say, ask, camera and fade, run one at a time. Skipping a scene still applies every step’s result, so the story never breaks.</p></div>
+                    <div class="note-card"><span class="note-n">03</span><h3 data-th="co-op แบบ peer-to-peer">Peer-to-peer co-op</h3><p data-th="เกมของเจ้าของห้องเป็นตัวหลัก การเปลี่ยนแปลงในโลกส่งเป็นส่วนต่างวินาทีละ 4 ครั้ง ตำแหน่งผู้เล่นวินาทีละ 10 ครั้ง ผ่าน WebRTC จึงไม่ต้องมีเซิร์ฟเวอร์เกม">The host’s game is the source of truth. World changes go out as diffs four times a second and player positions ten times a second over WebRTC, so no game server is needed.</p></div>
+                    <div class="note-card"><span class="note-n">04</span><h3 data-th="ไม่มีไฟล์รูป ไม่ต้อง build">No asset files, no build step</h3><p data-th="ภาพและเพลงทุกโน้ตสร้างจากโค้ดด้วย Canvas 2D และ Web Audio API เป็นไฟล์ JavaScript ธรรมดา โฮสต์บน GitHub Pages ได้เลย">Every sprite and every note of music is generated in code with Canvas 2D and the Web Audio API. Plain JavaScript files, hosted as-is on GitHub Pages.</p></div>
+                    </div>
+                    <div class="code-window">
+<div class="code-tabs"><span class="code-tab">cutscene.js <span class="x">×</span></span></div>
+<pre class="code"><code><span class="ln"><span class="com">// simplified from js/cutscene.js</span></span><span class="ln">village1: () => [</span><span class="ln">  { <span class="prop">t</span>: <span class="str">'emote'</span>, <span class="prop">who</span>: <span class="str">'boon'</span>, <span class="prop">e</span>: <span class="str">'!'</span> },</span><span class="ln">  { <span class="prop">t</span>: <span class="str">'walk'</span>,  <span class="prop">who</span>: <span class="str">'boon'</span>, x, y },</span><span class="ln">  { <span class="prop">t</span>: <span class="str">'face'</span>,  <span class="prop">who</span>: <span class="str">'p'</span>, <span class="prop">dir</span>: <span class="str">'right'</span> },</span><span class="ln">  { <span class="prop">t</span>: <span class="str">'say'</span>,   <span class="prop">who</span>: <span class="str">'boon'</span>, <span class="prop">text</span>, <span class="prop">expr</span>: <span class="str">'happy'</span> },</span><span class="ln">  { <span class="prop">t</span>: <span class="str">'fn'</span>,    <span class="prop">f</span>: () => addFriend(<span class="str">'boon'</span>, <span class="num">20</span>) },</span><span class="ln">],<span class="cursor" aria-hidden="true"></span></span></code></pre>
+<div class="code-status"><span>JavaScript</span><span>Ln 8</span></div>
+</div>
+                </div>
 
                 <div class="more-card">
-                    <div><h3>More on GitHub</h3><p>Everything else I've put online, including this website.</p></div>
+                    <div><h3 data-th="ดูเพิ่มบน GitHub">More on GitHub</h3><p data-th="ทุกอย่างที่ผมลงไว้ รวมถึงเว็บนี้ด้วย">Everything else I've put online, including this website.</p></div>
                     <a class="btn btn-ghost" href="https://github.com/RealCeedC5" target="_blank" rel="noopener">github.com/RealCeedC5 <span class="arrow">→</span></a>
                 </div>
             </div>
         </section>
     </main>
 
+    <dialog class="lightbox" aria-label="Screenshot viewer" data-th-aria-label="ดูภาพหน้าจอ">
+        <figure>
+            <img src="" alt="">
+            <figcaption><span class="lb-cap"></span><span class="lb-count"></span></figcaption>
+        </figure>
+        <button type="button" class="lb-btn lb-prev" aria-label="Previous screenshot" data-th-aria-label="ภาพก่อนหน้า">‹</button>
+        <button type="button" class="lb-btn lb-next" aria-label="Next screenshot" data-th-aria-label="ภาพถัดไป">›</button>
+        <button type="button" class="lb-btn lb-close" aria-label="Close" data-th-aria-label="ปิด">×</button>
+    </dialog>
+
     <footer>
         <div class="container">
             <a href="index.html" class="logo"><span class="bar">|</span> C5 <span class="bar">|</span></a>
             <div class="social-icons"></div>
-            <p>&copy; <span data-year>2026</span> C5. All rights reserved.</p>
+            <p data-th="&amp;copy; &lt;span data-year&gt;2026&lt;/span&gt; C5 สงวนลิขสิทธิ์">&copy; <span data-year>2026</span> C5. All rights reserved.</p>
         </div>
     </footer>
     <script src="script.js"></script>
