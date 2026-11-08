@@ -2,7 +2,7 @@
    Site settings — edit these to update every page at once
    ========================================================= */
 const SITE = {
-  // true = "Open", false = "Closed"
+  // CMS status pill: true = "open", false = "closed"
   commissionsOpen: false,
 
   // Leave a value empty ('') to hide that contact.
@@ -17,15 +17,11 @@ const SITE = {
    Page text lives in the HTML: English inside each tag, Thai in its data-th attribute. */
 const WORDS = {
   en: {
-    open: 'Open', closed: 'Closed',
-    copyOpen: "I'm taking new work. Message me with what you need.",
-    copyClosed: "I'm not taking new work right now, but you can still reach me.",
+    open: 'open', closed: 'closed',
     copy: 'Copy', copied: 'Copied'
   },
   th: {
-    open: 'เปิดรับ', closed: 'ปิดรับ',
-    copyOpen: 'ตอนนี้เปิดรับงานอยู่ ทักมาบอกได้เลยว่าต้องการอะไร',
-    copyClosed: 'ตอนนี้ยังไม่รับงานใหม่ แต่ทักมาคุยได้นะ',
+    open: 'open', closed: 'closed',
     copy: 'คัดลอก', copied: 'คัดลอกแล้ว'
   }
 };
@@ -65,7 +61,7 @@ document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click
   applyLang();
 }));
 
-/* ---------- commission status ---------- */
+/* ---------- CMS status ---------- */
 function applyStatus() {
   const open = SITE.commissionsOpen;
   document.querySelectorAll('[data-status]').forEach(el => {
@@ -74,8 +70,7 @@ function applyStatus() {
     el.classList.toggle('status-closed', !open);
   });
   document.querySelectorAll('[data-status-pill]').forEach(el => el.classList.toggle('is-open', open));
-  document.querySelectorAll('[data-status-bool]').forEach(el => { el.textContent = String(open); });
-  document.querySelectorAll('[data-status-copy]').forEach(el => { el.textContent = open ? w('copyOpen') : w('copyClosed'); });
+  document.querySelectorAll('[data-status-bool]').forEach(el => { el.textContent = open ? '"open"' : '"closed"'; });
 }
 
 /* ---------- footer year ---------- */

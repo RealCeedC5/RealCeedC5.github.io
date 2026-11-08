@@ -8,7 +8,7 @@ Plain HTML, CSS and JavaScript with no build step. Every page works in English a
 - `index.html` home: intro, Luau code window, latest project with gameplay video, languages
 - `portfolios.html` Rai Sukjai case study: gameplay video, screenshot viewer, features and how it's built
 - `about.html` about me
-- `contact.html` contacts and commission status
+- `contact.html` contacts and CMS status
 - `404.html` page-not-found screen for GitHub Pages
 
 ## Updating the site
@@ -16,7 +16,7 @@ Open `script.js` and edit the `SITE` settings at the top. Every page updates fro
 
 ```js
 const SITE = {
-  commissionsOpen: false,          // true shows "Open" everywhere, including the code window
+  commissionsOpen: false,          // the "CMS closed" pill: true shows "CMS open" everywhere, including the code window
   contacts: {
     github: 'https://github.com/RealCeedC5',
     discord: '',                   // your Discord username

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title data-th="C5 | สคริปเตอร์">C5 | Scripter</title>
-    <meta name="description" content="C5 writes Lua and Luau scripts and takes scripting commissions. Projects include Rai Sukjai, a Thai farming game with online co-op.">
+    <meta name="description" content="C5 writes Lua and Luau scripts and makes browser games. Projects include Rai Sukjai, a Thai farming game with online co-op.">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="C5">
     <meta property="og:title" content="C5 | Scripter">
-    <meta property="og:description" content="C5 writes Lua and Luau scripts and takes scripting commissions. Projects include Rai Sukjai, a Thai farming game with online co-op.">
+    <meta property="og:description" content="C5 writes Lua and Luau scripts and makes browser games. Projects include Rai Sukjai, a Thai farming game with online co-op.">
     <meta property="og:url" content="https://realceedc5.github.io/">
     <meta property="og:image" content="https://realceedc5.github.io/images/og.jpg">
     <meta property="og:image:width" content="1200">
@@ -46,9 +46,9 @@
         <section class="hero">
             <div class="container">
                 <div>
-                    <span class="status" data-status-pill><span class="dot"></span><span><span data-th="คอมมิชชัน">Commissions</span> <b data-status class="status-closed">Closed</b></span></span>
+                    <span class="status" data-status-pill><span class="dot"></span><span>CMS <b data-status class="status-closed">closed</b></span></span>
                     <h1 data-th="สวัสดี ผม C5&lt;br&gt; ผมเขียน&lt;span class=&quot;hl&quot;&gt;สคริปต์&lt;/span&gt;">Hello, I'm C5,<br> I do <span class="hl">scripts</span></h1>
-                    <p class="lede" data-th="ส่วนใหญ่ผมรับงานเขียนสคริปต์ Lua และ Luau&lt;br&gt; แต่ภาษาอื่นก็ทำได้เหมือนกัน &lt;span class=&quot;note&quot;&gt;(นาน ๆ ที)&lt;/span&gt;">I most likely take commissions for Lua and Luau scripting,<br> but I can also work with other languages as well <span class="note">(I rarely do)</span>.</p>
+                    <p class="lede" data-th="ส่วนใหญ่ผมเขียนสคริปต์ Lua และ Luau&lt;br&gt; ภาษาอื่นก็เขียนได้เหมือนกัน &lt;span class=&quot;note&quot;&gt;(นาน ๆ ที)&lt;/span&gt;">I mostly write Lua and Luau scripts,<br> and sometimes other languages too <span class="note">(rarely)</span>.</p>
                     <div class="buttons">
                         <a href="portfolios.html" class="btn" data-th="ดูผลงาน &lt;span class=&quot;arrow&quot;&gt;→&lt;/span&gt;">See my work <span class="arrow">→</span></a>
                         <a href="contact.html" class="btn btn-ghost" data-th="ติดต่อ">Contacts</a>
@@ -56,8 +56,8 @@
                 </div>
                 <div class="code-window">
 <div class="code-tabs"><span class="code-tab">C5.luau <span class="x">×</span></span><span class="code-tab off">portfolio.luau</span></div>
-<pre class="code"><code><span class="ln"><span class="com">-- C5.luau</span></span><span class="ln"><span class="kw">local</span> C5 = {</span><span class="ln">    <span class="prop">role</span> = <span class="str">"Scripter"</span>,</span><span class="ln">    <span class="prop">languages</span> = { <span class="str">"Luau"</span>, <span class="str">"Lua"</span> },</span><span class="ln">    <span class="prop">otherLanguages</span> = <span class="str">"rarely"</span>,</span><span class="ln">    <span class="prop">commissionsOpen</span> = <span class="num" data-status-bool>false</span>,</span><span class="ln">}</span><span class="ln"></span><span class="ln"><span class="kw">function</span> C5:hire(request)</span><span class="ln">    <span class="kw">if not</span> self.commissionsOpen <span class="kw">then</span></span><span class="ln">        warn(<span class="str">"Check back soon!"</span>)</span><span class="ln">        <span class="kw">return</span></span><span class="ln">    <span class="kw">end</span></span><span class="ln">    <span class="kw">return</span> self:script(request)</span><span class="ln"><span class="kw">end</span></span><span class="ln"></span><span class="ln"><span class="kw">return</span> C5<span class="cursor" aria-hidden="true"></span></span></code></pre>
-<div class="code-status"><span>Luau · UTF-8</span><span>Ln 17, Col 10</span></div>
+<pre class="code"><code><span class="ln"><span class="com">-- C5.luau</span></span><span class="ln"><span class="kw">local</span> C5 = {</span><span class="ln">    <span class="prop">role</span> = <span class="str">"Scripter"</span>,</span><span class="ln">    <span class="prop">languages</span> = { <span class="str">"Luau"</span>, <span class="str">"Lua"</span> },</span><span class="ln">    <span class="prop">otherLanguages</span> = <span class="str">"rarely"</span>,</span><span class="ln">    <span class="prop">cms</span> = <span class="str" data-status-bool>"closed"</span>,</span><span class="ln">}</span><span class="ln"></span><span class="ln"><span class="kw">function</span> C5:make(idea)</span><span class="ln">    <span class="kw">return</span> self:script(idea)</span><span class="ln"><span class="kw">end</span></span><span class="ln"></span><span class="ln"><span class="kw">return</span> C5<span class="cursor" aria-hidden="true"></span></span></code></pre>
+<div class="code-status"><span>Luau · UTF-8</span><span>Ln 13, Col 10</span></div>
 </div>
             </div>
         </section>
@@ -94,9 +94,9 @@
             <div class="container">
                 <div class="section-head"><div><p class="eyebrow" data-th="ภาษา">languages</p><h2 data-th="ภาษาที่ผมใช้">What I script in</h2></div></div>
                 <div class="skills">
-                    <div class="skill"><span class="ext">.luau</span><h3>Luau</h3><p data-th="ภาษาสคริปต์ของ Roblox งานที่ผมรับส่วนใหญ่เขียนด้วยภาษานี้">The scripting language of Roblox. Most of my commissions are written in it.</p><span class="tags"><span class="tag-main" data-th="หลัก">Main</span></span></div>
+                    <div class="skill"><span class="ext">.luau</span><h3>Luau</h3><p data-th="ภาษาสคริปต์ของ Roblox สคริปต์ส่วนใหญ่ของผมเขียนด้วยภาษานี้">The scripting language of Roblox. Most of my scripts are written in it.</p><span class="tags"><span class="tag-main" data-th="หลัก">Main</span></span></div>
                     <div class="skill"><span class="ext">.lua</span><h3>Lua</h3><p data-th="Lua แบบดั้งเดิม ต้นแบบที่ Luau พัฒนาต่อมา">Plain Lua scripting, the language Luau grew out of.</p><span class="tags"><span class="tag-main" data-th="หลัก">Main</span></span></div>
-                    <div class="skill minor"><span class="ext">.*</span><h3 data-th="ภาษาอื่น ๆ">Other languages</h3><p data-th="ภาษาอื่นก็เขียนได้ อย่างไร่สุขใจที่เขียนด้วย JavaScript แต่ไม่ค่อยรับเป็นงาน">I can work in other languages too, like the JavaScript behind Rai Sukjai, but I rarely take that work.</p><span class="tags"><span class="tag-minor" data-th="นาน ๆ ที">Rarely</span></span></div>
+                    <div class="skill minor"><span class="ext">.*</span><h3 data-th="ภาษาอื่น ๆ">Other languages</h3><p data-th="ภาษาอื่นก็เขียนได้ อย่างไร่สุขใจที่เขียนด้วย JavaScript แต่นาน ๆ ที">I can write other languages too, like the JavaScript behind Rai Sukjai, but only now and then.</p><span class="tags"><span class="tag-minor" data-th="นาน ๆ ที">Rarely</span></span></div>
                 </div>
             </div>
         </section>
@@ -104,8 +104,8 @@
         <section class="section">
             <div class="container">
                 <div class="cta">
-                    <div><h2 data-th="อยากได้สคริปต์?">Need a script?</h2><p data-th="เช็กสถานะรับงานแล้วทักมาได้เลย">Check my commission status and message me.</p></div>
-                    <div class="buttons"><a href="contact.html" class="btn" data-th="ติดต่อผม &lt;span class=&quot;arrow&quot;&gt;→&lt;/span&gt;">Contact me <span class="arrow">→</span></a></div>
+                    <div><h2 data-th="ลองเล่นไร่สุขใจ">Play Rai Sukjai</h2><p data-th="เล่นบนเบราว์เซอร์ได้เลย ไม่ต้องติดตั้ง ชวนเพื่อนมาเล่นด้วยกันได้">It runs in your browser, with nothing to install. Bring friends along online.</p></div>
+                    <div class="buttons"><a href="https://realceedc5.github.io/rai-sukjai/" class="btn" target="_blank" rel="noopener" data-th="เล่นเลย &lt;span class=&quot;arrow&quot;&gt;→&lt;/span&gt;">Play it <span class="arrow">→</span></a></div>
                 </div>
             </div>
         </section>

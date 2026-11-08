@@ -55,7 +55,7 @@
                 <div>
                     <div class="prose">
                         <p data-th="ผมเป็นสคริปเตอร์ ส่วนใหญ่เขียน Lua กับ Luau ภาษาที่อยู่เบื้องหลังเกม Roblox">I'm a scripter. Most of what I write is Lua and Luau, the language behind Roblox games.</p>
-                        <p data-th="ผมรับงานเขียนสคริปต์ Lua และ Luau บางครั้งก็รับงานภาษาอื่นบ้าง แต่น้อยมาก งานที่ถนัดที่สุดจึงเป็น Lua กับ Luau">I take commissions for Lua and Luau scripting. Now and then I'll pick up work in another language, but that's rare, so Lua and Luau are where I'm most useful.</p>
+                        <p data-th="นาน ๆ ทีผมก็เขียนภาษาอื่นบ้าง แต่น้อยมาก ที่ถนัดที่สุดจึงเป็น Lua กับ Luau">Now and then I write in another language, but that's rare, so Lua and Luau are where I'm strongest.</p>
                         <p data-th="นอกจากนี้ผมยังทำเกมด้วย อย่างไร่สุขใจ เกมทำไร่แบบไทยที่เขียนด้วย JavaScript เล่นบนเบราว์เซอร์ได้เลย และชวนเพื่อนมาเล่นออนไลน์ได้">I also make games, like Rai Sukjai, a Thai farming game written in JavaScript that runs in your browser and can be played online with friends.</p>
                         <p data-th="ผลงานที่ปล่อยแล้วอยู่ในหน้าผลงาน ส่วนที่เหลืออยู่บน GitHub">My published projects are on the portfolio page, and everything else is on GitHub.</p>
                     </div>
@@ -65,16 +65,16 @@
                         <li data-th="ภาษาอื่น &lt;small&gt;(นาน ๆ ที)&lt;/small&gt;">Other languages <small>(rarely)</small></li>
                     </ul>
                     <div class="panel">
-                        <span class="status" data-status-pill><span class="dot"></span><span><span data-th="คอมมิชชัน">Commissions</span> <b data-status class="status-closed">Closed</b></span></span>
+                        <span class="status" data-status-pill><span class="dot"></span><span>CMS <b data-status class="status-closed">closed</b></span></span>
                         <div class="buttons">
                             <a href="portfolios.html" class="btn btn-ghost" data-th="ดูผลงาน">See my work</a>
-                            <a href="contact.html" class="btn" data-th="ติดต่อผม &lt;span class=&quot;arrow&quot;&gt;→&lt;/span&gt;">Contact me <span class="arrow">→</span></a>
+                            <a href="https://realceedc5.github.io/rai-sukjai/" class="btn" target="_blank" rel="noopener" data-th="เล่นไร่สุขใจ &lt;span class=&quot;arrow&quot;&gt;→&lt;/span&gt;">Play Rai Sukjai <span class="arrow">→</span></a>
                         </div>
                     </div>
                 </div>
                 <div class="code-window">
 <div class="code-tabs"><span class="code-tab">about.luau <span class="x">×</span></span></div>
-<pre class="code"><code><span class="ln"><span class="com">-- about.luau</span></span><span class="ln"><span class="kw">local</span> me = <span class="kw">require</span>(script.Parent.C5)</span><span class="ln"></span><span class="ln">print(me.role)</span><span class="ln"><span class="com">--&gt; Scripter</span></span><span class="ln">print(me.languages)</span><span class="ln"><span class="com">--&gt; {"Luau", "Lua"}</span></span><span class="ln">print(me.commissionsOpen)</span><span class="ln"><span class="com">--&gt; <span data-status-bool>false</span></span><span class="cursor" aria-hidden="true"></span></span></code></pre>
+<pre class="code"><code><span class="ln"><span class="com">-- about.luau</span></span><span class="ln"><span class="kw">local</span> me = <span class="kw">require</span>(script.Parent.C5)</span><span class="ln"></span><span class="ln">print(me.role)</span><span class="ln"><span class="com">--&gt; Scripter</span></span><span class="ln">print(me.languages)</span><span class="ln"><span class="com">--&gt; {"Luau", "Lua"}</span></span><span class="ln">print(me.cms)</span><span class="ln"><span class="com">--&gt; <span data-status-bool>"closed"</span></span><span class="cursor" aria-hidden="true"></span></span></code></pre>
 <div class="code-status"><span>Output</span><span>Ln 9</span></div>
 </div>
             </div>
