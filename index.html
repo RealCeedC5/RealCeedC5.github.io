@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>C5 | Portfolio</title>
+    <meta name="description" content="C5 — Lua and Luau scripter taking commissions.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>| C5 |</h1>
-            <nav>
+            <a href="index.html" class="logo">| C5 |</a>
+            <nav aria-label="Main">
                 <ul>
                     <li><a href="portfolios.html">Portfolios</a></li>
                     <li><a href="about.html">About me</a></li>
@@ -24,8 +25,8 @@
         <section class="hero">
             <div class="container">
                 <h2>Hello, I'm C5,<br> I do scripts</h2>
-                <p>I most likely take commissions for Lua and Luau scripting,<br> But I can also work with other languages as well <span>(I rarely do)</span>.</p>
-                <p class="commission-status">MY COMMISSION STATUS: <span class="status-closed">Close</span></p>
+                <p>I most likely take commissions for Lua and Luau scripting,<br> But I can also work with other languages as well <span class="note">(I rarely do)</span>.</p>
+                <p class="commission-status">MY COMMISSION STATUS: <span data-status class="status-closed">Closed</span></p>
                 <div class="buttons">
                     <a href="contact.html" class="btn">Contacts</a>
                     <a href="about.html" class="btn">More about me</a>
@@ -36,8 +37,10 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 C5 All rights reserved.</p>
+            <div class="social-icons"></div>
+            <p>&copy; <span data-year>2026</span> C5. All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
