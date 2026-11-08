@@ -3,17 +3,18 @@
 Portfolio site for C5, a Lua and Luau scripter. Live at **https://realceedc5.github.io/WebsiteC5/**
 
 ## Pages
-- `index.html` home
-- `portfolios.html` projects
+- `index.html` home: intro, Luau code window, featured project, languages
+- `portfolios.html` projects with screenshots
 - `about.html` about me
-- `contact.html` contacts
+- `contact.html` contacts and commission status
+- `404.html` page-not-found screen for GitHub Pages
 
 ## Updating the site
-Open `script.js` and edit the `SITE` settings at the top:
+Open `script.js` and edit the `SITE` settings at the top. Every page updates from these:
 
 ```js
 const SITE = {
-  commissionsOpen: false,          // true shows "Open" on every page
+  commissionsOpen: false,          // true shows "Open" everywhere, including the code window
   contacts: {
     github: 'https://github.com/RealCeedC5',
     discord: '',                   // your Discord username
@@ -22,4 +23,5 @@ const SITE = {
 };
 ```
 
-Empty contacts are hidden. Colors live at the top of `styles.css`.
+Empty contacts are hidden. Colors and fonts are set at the top of `styles.css`.
+Project screenshots live in `images/`.
